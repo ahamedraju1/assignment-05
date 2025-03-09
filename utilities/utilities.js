@@ -4,6 +4,7 @@ function getInnerTextByID(id) {
 
 }
 
+
 function handleButtonClick(buttonId){
     alert('Board update successfully');
 
@@ -31,5 +32,8 @@ function handleButtonClick(buttonId){
     // if (taskNumber === 0) {
         document.getElementById(buttonId).disabled = true;
     // }
-
+    
+    if(buttonId === 'btnComplete5'){
+        alert('Congrats!! you have completed all the current Task');
+    }
 } 
