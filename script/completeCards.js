@@ -5,6 +5,14 @@ buttons.forEach(button => {
     });
 });
 
+function getRandomColor() {
+    return `#${Math.floor(Math.random()*16777215).toString(16)}`;
+}
+const colorBtn = document.getElementById("colorBtn");
+colorBtn.addEventListener("click", function() {
+    document.body.style.backgroundColor = getRandomColor(); // Change background color
+});
+
 document.addEventListener('click', function(){
     const clearHistory = document.getElementById('btnClearHistory');
 
@@ -32,21 +40,6 @@ if(backToDesk){
         window.location.href ='/index.html';
     })
 }
-
-const colors= ["bg-orange-300",'bg-red-300'];
-
-const colorIndex= 0;
-const button = document.getElementById('colorBtn');
-
-function changeBgColor(){
-    colorIndex = (colorIndex + 1) % colors.length;
-    button.classList.remove.apply(...colors);
-    button.classList.add(colors[colorIndex]);
-
-}
-button.addEventListener('click', changeBgColor);
-
-
 
 
 
