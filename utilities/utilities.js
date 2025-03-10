@@ -37,3 +37,7 @@ function handleButtonClick(buttonId){
         alert('Congrats!! you have completed all the current Task');
     }
 } 
+
+const today = new Date();
+const options = { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' };
+document.getElementById("currentDate").innerHTML = today.toLocaleDateString('en-US', options).replace(',', ',<br>');
