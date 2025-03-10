@@ -8,15 +8,20 @@ function getInnerTextByID(id) {
 function handleButtonClick(buttonId){
     alert('Board update successfully');
 
+    const button=document.getElementById(buttonId);
     let taskNumber = getInnerTextByID('number');
     console.log('Current Task Number:', taskNumber);
 
     let navNumber = getInnerTextByID('navNumber');
     console.log('Current Nav Number:', navNumber);
 
+    let taskTitle = button.closest('.task-card').querySelector('h3').innerText;
     let currentTime = new Date().toLocaleTimeString();
     document.getElementById('message').innerHTML += `
-        You have completed the task Add dark mode at Time: ${currentTime};
+      <div class='log-entry shadow-md rounded-lg'>
+        You have completed the task ${taskTitle} mode at Time: ${currentTime};
+
+      </div>  
     `
 
     if (taskNumber > 0) {

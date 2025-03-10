@@ -22,7 +22,7 @@
         }
     </style>
 
-    
+
 </head>
 
 <body class="poppins-font">
@@ -38,12 +38,12 @@
                     <h2 id="navNumber" class="font-bold text-lg">23</h2>
                     <div id="colorBtn" class="w-10 h-10 rounded-full cursor-pointer overflow-hidden">
                         <img class="w-full h-full object-cover" src="assets/theme-btn.png" alt="">
-                    </div> 
+                    </div>
                 </div>
             </nav>
         </header>
         <main>
-            <section class="flex mt-4 gap-6 ">
+            <section class="flex mt-4 gap-6">
                 <div class=" shadow-xl bg-slate-50 rounded-xl w-3/4">
                     <div class="flex justify-evenly p-10 gap-5">
                         <div class="flex shadow-lg rounded-lg w-64 h-32 p-5 bg-slate-100 items-center">
@@ -83,8 +83,11 @@
                                 <div class="flex items-center gap-9">
                                     <div class=" items-center w-full">06 march 2025</div>
                                     <div class="justify-end card-actions">
-                                        <button id="btnComplete"
-                                            class="btn bg-blue-600 text-white w-32 rounded-xl complete-btn">Complete</button>
+                                        <div class="task-card">
+                                            <h3 class="hidden">Fix Mobile Button Issue</h3>
+                                            <button id="btnComplete"
+                                                class="btn bg-blue-600 text-white w-32 rounded-xl complete-btn">Complete</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -102,8 +105,11 @@
                                 <div class="flex items-center gap-8">
                                     <div class=" items-center">06 march 2025</div>
                                     <div class="justify-end card-actions">
-                                        <button id="btnComplete1"
-                                            class="btn bg-blue-600 text-white w-32 rounded-xl complete-btn">Complete</button>
+                                        <div class="task-card">
+                                            <h3 class="hidden">Add Dark Mode</h3>
+                                            <button id="btnComplete1"
+                                                class="btn bg-blue-600 text-white w-32 rounded-xl complete-btn">Complete</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -121,76 +127,90 @@
                                 <div class="flex items-center gap-8">
                                     <div class=" items-center">06 march 2025</div>
                                     <div class="justify-end card-actions">
-                                        <button id="btnComplete2"
-                                            class="btn bg-blue-600 text-white w-32 rounded-xl complete-btn">Complete</button>
+                                        <div class="task-card">
+                                            <h3 class="hidden">Optimize Home page </h3>
+                                            <button id="btnComplete2"
+                                                class="btn bg-blue-600 text-white w-32 rounded-xl complete-btn">Complete</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card bg-slate-100 w-72 h-72  card-md shadow-sm">
-                            <div class="card-body">
-                                <p class="bg-white w-1/2 text-center">Meta</p>
-                                <h1 class="text-2xl font-medium">Add new emoji 🤲</h1>
-                                <p class="w-48 text-ellipsis overflow-hidden whitespace-nowrap bg-white p-5">Debug using
-                                    Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-                                    and ensure onClick works properly</p>
-                                <div class="outline-dashed outline-1">
-                                </div>
-                                <span>Deadline</span>
-                                <div class="flex items-center gap-8">
-                                    <div class=" items-center">06 march 2025</div>
-                                    <div class="justify-end card-actions">
+                    
+                    <div class="card bg-slate-100 w-72 h-72  card-md shadow-sm">
+                        <div class="card-body">
+                            <p class="bg-white w-1/2 text-center">Meta</p>
+                            <h1 class="text-2xl font-medium">Add new emoji 🤲</h1>
+                            <p class="w-48 text-ellipsis overflow-hidden whitespace-nowrap bg-white p-5">Debug using
+                                Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                                and ensure onClick works properly</p>
+                            <div class="outline-dashed outline-1">
+                            </div>
+                            <span>Deadline</span>
+                            <div class="flex items-center gap-8">
+                                <div class=" items-center">06 march 2025</div>
+                                <div class="justify-end card-actions">
+                                    <div class="task-card">
+                                        <h3 class="hidden">Add new emoji 🤲</h3>
                                         <button id="btnComplete3"
                                             class="btn bg-blue-600 text-white w-32 rounded-xl complete-btn">Complete</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card bg-slate-100 w-72 h-72  card-md shadow-sm">
-                            <div class="card-body">
-                                <p class="bg-white w-1/2 text-center">Google LLC</p>
-                                <h1 class="text-2xl font-medium">Integrate OpenAI API </h1>
-                                <p class="w-48 text-ellipsis overflow-hidden whitespace-nowrap bg-white p-5">Debug using
-                                    Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-                                    and ensure onClick works properly</p>
-                                <div class="outline-dashed outline-1">
-                                </div>
-                                <span>Deadline</span>
-                                <div class="flex items-center gap-8">
-                                    <div class=" items-center">06 march 2025</div>
-                                    <div class="justify-end card-actions">
-                                        <button id="btnComplete4"
-                                            class="btn bg-blue-600 text-white w-32 rounded-xl complete-btn">Complete</button>
-                                    </div>
-                                </div>
-                            </div>
+                    </div>
+                
+                <div class="card bg-slate-100 w-72 h-72  card-md shadow-sm">
+                    <div class="card-body">
+                        <p class="bg-white w-1/2 text-center">Google LLC</p>
+                        <h1 class="text-2xl font-medium">Integrate OpenAI API </h1>
+                        <p class="w-48 text-ellipsis overflow-hidden whitespace-nowrap bg-white p-5">Debug using
+                            Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                            and ensure onClick works properly</p>
+                        <div class="outline-dashed outline-1">
                         </div>
-                        <div class="card bg-slate-100 w-72 h-72  card-md shadow-sm">
-                            <div class="card-body">
-                                <p class="bg-white w-1/2 text-center">Glassdoar</p>
-                                <h1 class="text-2xl font-medium">Improve Job searching</h1>
-                                <p class="w-48 text-ellipsis overflow-hidden whitespace-nowrap bg-white p-5">Debug using
-                                    Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-                                    and ensure onClick works properly</p>
-                                <div class="outline-dashed outline-1">
-                                </div>
-                                <span>Deadline</span>
-                                <div class="flex items-center gap-8">
-                                    <div class=" items-center">06 march 2025</div>
-                                    <div class="justify-end card-actions">
-                                        <button id="btnComplete5"
-                                            class="btn bg-blue-600 text-white rounded-xl w-32 complete-btn">Complete</button>
-                                    </div>
+                        <span>Deadline</span>
+                        <div class="flex items-center gap-8">
+                            <div class=" items-center">06 march 2025</div>
+                            <div class="justify-end card-actions">
+                                <div class="task-card">
+                                    <h3 class="hidden">Integrate OpenAI API</h3>
+                                    <button id="btnComplete4"
+                                        class="btn bg-blue-600 text-white w-32 rounded-xl complete-btn">Complete</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-           
+                <div class="card bg-slate-100 w-72 h-72  card-md shadow-sm">
+                    <div class="card-body">
+                        <p class="bg-white w-1/2 text-center">Glassdoar</p>
+                        <h1 class="text-2xl font-medium">Improve Job searching</h1>
+                        <p class="w-48 text-ellipsis overflow-hidden whitespace-nowrap bg-white p-5">Debug using
+                            Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                            and ensure onClick works properly</p>
+                        <div class="outline-dashed outline-1">
+                        </div>
+                        <span>Deadline</span>
+                        <div class="flex items-center gap-8">
+                            <div class=" items-center">06 march 2025</div>
+                            <div class="justify-end card-actions">
+                                <div class="task-card">
+                                    <h3 class="hidden">Improve Job searching</h3>
+                                    <button id="btnComplete5"
+                                        class="btn bg-blue-600 text-white rounded-xl w-32 complete-btn">Complete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
                 <!-- activity log -->
 
                 <div class="shadow-lg rounded-lg grid grid-rows-5 w-96 bg-slate-50">
-                    <div class="mx-auto">
+                    <div class="mx-auto mt-4">
                         <div class="flex mx-auto gap-4">
                             <img class="w-6 h-6" src="assets/activity.png" alt="">
                             <h3 class="text-xl font-medium">Activity Log</h3>
@@ -201,8 +221,9 @@
                         <div class="outline-dashed outline-1">
                         </div>
                     </div>
-                    <div id="message" class="bg-slate-50 h-20 pt-4 rounded-lg">
-                    </div>   
+                    <div id="message" class="bg-slate-50 h-20 pt-4 rounded-md">
+
+                    </div>
                 </div>
             </section>
         </main>
@@ -213,7 +234,7 @@
     <script src="./utilities/utilities.js"></script>
     <script src="script/completeCards.js"></script>
     <!-- <script src="script/navNumber.js"></script> -->
-     
+
 </body>
 
 </html>
