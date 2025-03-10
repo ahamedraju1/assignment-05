@@ -8,11 +8,14 @@ buttons.forEach(button => {
 function getRandomColor() {
     return `#${Math.floor(Math.random()*16777215).toString(16)}`;
 }
-const colorBtn = document.getElementById("colorBtn");
-colorBtn.addEventListener("click", function() {
-    document.body.style.backgroundColor = getRandomColor(); // Change background color
-});
 
+const colorBtn = document.getElementById("colorBtn");
+ if(colorBtn){
+    colorBtn.addEventListener("click", function(){
+        document.body.style.backgroundColor = getRandomColor();  // Change background color
+    })
+ }
+   
 document.addEventListener('click', function(){
     const clearHistory = document.getElementById('btnClearHistory');
 
@@ -33,13 +36,10 @@ document.getElementById('discoverBox')
     }
 // })
 
-
+ 
 const backToDesk = document.getElementById('btnBack');
 if(backToDesk){
     backToDesk.addEventListener('click', function(){
         window.location.href ='/index.html';
     })
 }
-
-
-
